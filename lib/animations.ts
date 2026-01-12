@@ -8,9 +8,9 @@ export const duration = {
 };
 
 export const ease = {
-    default: [0.25, 0.1, 0.25, 1],
-    smooth: [0.43, 0.13, 0.23, 0.96],
-    out: [0, 0, 0.2, 1],
+    default: [0.25, 0.1, 0.25, 1] as const,
+    smooth: [0.43, 0.13, 0.23, 0.96] as const,
+    out: [0, 0, 0.2, 1] as const,
 };
 
 // Page transition
