@@ -7,10 +7,11 @@ export const duration = {
     slow: 0.8,
 };
 
+// Fix: Type the ease values as tuples with exactly 4 numbers
 export const ease = {
-    default: [0.25, 0.1, 0.25, 1],
-    smooth: [0.43, 0.13, 0.23, 0.96],
-    out: [0, 0, 0.2, 1],
+    default: [0.25, 0.1, 0.25, 1] as [number, number, number, number],
+    smooth: [0.43, 0.13, 0.23, 0.96] as [number, number, number, number],
+    out: [0, 0, 0.2, 1] as [number, number, number, number],
 };
 
 // Page transition
