@@ -7,9 +7,9 @@ export const profile = {
   image: "/images/profile.jpg",
   email: "randyamaheswara.work@gmail.com",
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/maheswaraaa",
+    linkedin: "https://www.linkedin.com/in/randyamaheswara/",
+    twitter: "https://x.com/madudidot",
   },
 };
 
