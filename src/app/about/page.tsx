@@ -54,25 +54,18 @@ function AboutContent() {
                             <p className="text-heading text-muted mb-8">{profile.role}</p>
                         </Reveal>
 
-                        <Reveal delay={0.4}>
-                            <p className="text-subheading mb-8">{profile.tagline}</p>
-                        </Reveal>
-
                         <Reveal delay={0.5}>
-                            <div className="prose prose-lg max-w-none">
-                                <p className="text-body text-muted leading-relaxed mb-6">
-                                    {profile.bio}
-                                </p>
+                            <br />
+                            <div className="prose prose-lg max-w-none mb-6">
                                 <p className="text-body text-muted leading-relaxed">
-                                    I believe in approaching problems with curiosity and depth,
-                                    taking time to understand the full picture before diving into
-                                    solutions. This methodical approach helps me create software
-                                    that not only works but truly serves its purpose.
+                                    I’m a {new Date().getFullYear() - 1998}-year-old software engineer, born and raised in Yogyakarta, Indonesia.
+                                    My background in ERP systems taught me that good software starts with understanding—workflows, constraints, and the people behind them—before writing code. I tend to slow down, frame problems carefully, and look for structure before jumping into solutions. This approach helps me build systems that are reliable, maintainable, and genuinely useful.
                                 </p>
                             </div>
                         </Reveal>
 
                         <Reveal delay={0.6}>
+                            <br />
                             <div className="mt-16 pt-8 border-t border-border">
                                 <div className="grid grid-cols-2 gap-8">
                                     <div>

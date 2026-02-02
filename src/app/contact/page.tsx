@@ -52,13 +52,21 @@ function ContactContent() {
                         </Reveal>
 
                         <Reveal delay={0.5}>
-                            <div className="mt-12 flex justify-start">
+                            <div className="mt-12 flex justify-start gap-2">
                                 <Button
                                     href={`mailto:${profile.email}`}
                                     size="md"
                                     className="!text-xs !px-4 !py-2"
                                 >
                                     Send an email
+                                </Button>
+                                {/* Download Resume Button - NEW */}
+                                <Button
+                                    href={profile.resumeUrl}
+                                    size="md"
+                                    className="!text-xs !px-4 !py-2 !bg-transparent !border !border-foreground !text-foreground hover:!bg-foreground hover:!text-background"
+                                >
+                                    Download Resume
                                 </Button>
                             </div>
                         </Reveal>
@@ -71,7 +79,7 @@ function ContactContent() {
                                     <p className="text-caption mb-2">Location</p>
                                     <p className="text-body">{profile.location}</p>
                                 </div>
-
+                                <br />
                                 <div>
                                     <p className="text-caption mb-4">Socials</p>
                                     <div className="space-y-2">

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { profile } from "@/content/profile";
 import { Reveal, TextReveal } from "../ui/Reveal";
+import { Button } from "../ui/Button";
 
 export function Hero() {
     return (
@@ -28,10 +29,24 @@ export function Hero() {
 
                     {/* Side info */}
                     <div className="lg:col-span-4 lg:text-right">
-                        <Reveal delay={0.8}>
-                            <p className="text-caption mb-2">Based in</p>
-                            <p className="text-body">{profile.location}</p>
-                        </Reveal>
+                        <div className="space-y-6">
+                            <Reveal delay={0.8}>
+                                <div>
+                                    <p className="text-caption mb-2">Based in</p>
+                                    <p className="text-body">{profile.location}</p>
+                                </div>
+                            </Reveal>
+
+                            {/* Status Badge */}
+                            <Reveal delay={1.0}>
+                                <div className="flex lg:justify-end">
+                                    <div className="inline-flex items-center gap-2 px-4 py-2 text-green-600 rounded-full text-xs whitespace-nowrap">
+                                        <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse flex-shrink-0"></span>
+                                        Available for new opportunities
+                                    </div>
+                                </div>
+                            </Reveal>
+                        </div>
                     </div>
                 </div>
             </div>
