@@ -3,7 +3,7 @@ export const profile = {
   role: "Software Engineer",
   tagline: "Discover. Design. Deliver.",
   bio: "Software engineer with a strong focus on ideation, structure, and problem framing — before code.",
-  location: "Yogyakarta,Indonesia",
+  location: "Yogyakarta, Indonesia",
   image: "/images/profile-pic.jpg",
   email: "randyamaheswara.work@gmail.com",
   socials: {

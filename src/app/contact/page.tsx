@@ -79,7 +79,7 @@ function ContactContent() {
                                     <p className="text-caption mb-2">Location</p>
                                     <p className="text-body">{profile.location}</p>
                                 </div>
-
+                                <br />
                                 <div>
                                     <p className="text-caption mb-4">Socials</p>
                                     <div className="space-y-2">

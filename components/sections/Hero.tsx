@@ -36,6 +36,16 @@ export function Hero() {
                                     <p className="text-body">{profile.location}</p>
                                 </div>
                             </Reveal>
+
+                            {/* Status Badge */}
+                            <Reveal delay={1.0}>
+                                <div className="flex lg:justify-end">
+                                    <div className="inline-flex items-center gap-2 px-4 py-2 text-green-600 rounded-full text-xs whitespace-nowrap">
+                                        <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse flex-shrink-0"></span>
+                                        Available for new opportunities
+                                    </div>
+                                </div>
+                            </Reveal>
                         </div>
                     </div>
                 </div>
