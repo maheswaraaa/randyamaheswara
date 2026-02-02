@@ -4,7 +4,7 @@ export const profile = {
   tagline: "Designing and building thoughtful software experiences",
   bio: "Software engineer with a strong focus on ideation, structure, and problem framing — before code.",
   location: "Yogyakarta,Indonesia",
-  image: "/images/profile.jpg",
+  image: "/images/profile-pic.jpg",
   email: "randyamaheswara.work@gmail.com",
   socials: {
     github: "https://github.com/maheswaraaa",

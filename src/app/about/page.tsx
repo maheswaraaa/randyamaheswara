@@ -26,6 +26,7 @@ function AboutContent() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
                     {/* Left column - Image */}
                     <div className="lg:col-span-5">
+                        <div className="h-7"></div> {/* 96px spacer */}
                         <Reveal>
                             <div className="relative aspect-[3/4] bg-muted/10 rounded-lg overflow-hidden">
                                 <Image

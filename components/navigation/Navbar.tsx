@@ -13,7 +13,7 @@ export function Navbar() {
 
     return (
         <>
-            <header className="fixed top-0 left-0 right-0 z-40 mix-blend-difference">
+            <header className="fixed top-0 left-0 right-0 z-50">
                 <nav className="container flex items-center justify-between py-6">
                     <Magnetic strength={0.2}>
                         <Link

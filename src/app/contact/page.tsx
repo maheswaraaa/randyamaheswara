@@ -52,8 +52,12 @@ function ContactContent() {
                         </Reveal>
 
                         <Reveal delay={0.5}>
-                            <div className="mt-12">
-                                <Button href={`mailto:${profile.email}`} size="lg">
+                            <div className="mt-12 flex justify-start">
+                                <Button
+                                    href={`mailto:${profile.email}`}
+                                    size="md"
+                                    className="!text-xs !px-4 !py-2"
+                                >
                                     Send an email
                                 </Button>
                             </div>
