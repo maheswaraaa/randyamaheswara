@@ -70,11 +70,14 @@ export function TextReveal({
     return (
         <span ref={ref} className={className}>
             {items.map((item, index) => (
-                <span key={index} className="inline-block overflow-hidden">
+                <span key={index}
+                    className="inline-block overflow-hidden align-bottom"
+                    style={{ minHeight: '1.0em', paddingBottom: '0.1em' }}
+                >
                     <motion.span
                         className="inline-block"
                         initial={{ y: "100%" }}
-                        animate={isInView ? { y: 0 } : { y: "100%" }}
+                        animate={isInView ? { y: 0 } : { y: "110%" }}
                         transition={{
                             duration: 0.5,
                             delay: delay + index * 0.03,
