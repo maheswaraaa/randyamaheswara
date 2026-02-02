@@ -26,7 +26,7 @@ export function SelectedWork() {
                 {hasProjects ? (
                     <div className="space-y-1">
                         {projects.slice(0, 4).map((project, index) => (
-                            <ProjectRow key={project.id} project={project} index={index} />
+                            <ProjectRowProps key={project.id} project={project} index={index} />
                         ))}
                     </div>
                 ) : (
@@ -42,34 +42,40 @@ interface ProjectRowProps {
     index: number;
 }
 
-function ProjectRow({ project, index }: ProjectRowProps) {
+function ProjectRowProps({ project, index }: ProjectRowProps) {
     return (
         <Reveal delay={index * 0.1}>
-            <motion.div
-                className="group py-6 border-t border-border last:border-b cursor-pointer"
-                whileHover="hover"
+            <Link
+                href={project.link || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
             >
-                <div className="grid grid-cols-12 gap-4 items-center">
-                    <div className="col-span-1 text-caption">{String(index + 1).padStart(2, "0")}</div>
-                    <div className="col-span-5">
-                        <motion.h3
-                            className="text-subheading"
-                            variants={{
-                                hover: { x: 10 },
-                            }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            {project.title}
-                        </motion.h3>
+                <motion.div
+                    className="group py-6 border-t border-border last:border-b cursor-pointer hover:bg-muted/5 transition-colors"
+                    whileHover="hover"
+                >
+                    <div className="grid grid-cols-12 gap-4 items-center">
+                        <div className="col-span-1 text-caption">{String(index + 1).padStart(2, "0")}</div>
+                        <div className="col-span-5">
+                            <motion.h3
+                                className="text-subheading"
+                                variants={{
+                                    hover: { x: 10 },
+                                }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                {project.title}
+                            </motion.h3>
+                        </div>
+                        <div className="col-span-4 text-muted text-body hidden md:block">
+                            {project.category}
+                        </div>
+                        <div className="col-span-2 text-muted text-body text-right">
+                            {project.year}
+                        </div>
                     </div>
-                    <div className="col-span-4 text-muted text-body hidden md:block">
-                        {project.category}
-                    </div>
-                    <div className="col-span-2 text-muted text-body text-right">
-                        {project.year}
-                    </div>
-                </div>
-            </motion.div>
+                </motion.div>
+            </Link>
         </Reveal>
     );
 }

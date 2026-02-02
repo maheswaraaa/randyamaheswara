@@ -1,5 +1,9 @@
 "use client";
 
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { projects } from "@/content/projects";
 import { Navbar } from "@/components/navigation/Navbar";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import { FooterCTA } from "@/components/sections/FooterCTA";
@@ -19,8 +23,9 @@ export default function WorkPage() {
 
 function WorkContent() {
     return (
-        <section className="min-h-screen flex flex-col justify-center pt-24">
+        <section className="min-h-screen pt-32 pb-24">
             <div className="container">
+                <div className="h-12"></div> {/* Spacer */}
                 <Reveal>
                     <p className="text-caption mb-4">Portfolio</p>
                 </Reveal>
@@ -28,18 +33,58 @@ function WorkContent() {
                     <TextReveal text="Selected Work" delay={0.1} />
                 </h1>
 
-                <Reveal delay={0.2}>
-                    <div className="py-32 border-t border-b border-border text-center">
-                        <p className="text-caption mb-6">Coming Soon</p>
-                        <p className="text-heading text-muted max-w-lg mx-auto mb-8">
-                            I&apos;m currently working on some exciting projects.
-                        </p>
-                        <p className="text-body text-muted max-w-md mx-auto">
-                            Check back soon to see what I&apos;ve been building. In the
-                            meantime, feel free to reach out if you&apos;d like to collaborate.
-                        </p>
-                    </div>
-                </Reveal>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {projects.map((project, index) => (
+                        <Reveal key={project.id} delay={0.2 + index * 0.1}>
+                            <Link
+                                href={project.link || "#"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <motion.div
+                                    className="group cursor-pointer"
+                                    whileHover="hover"
+                                >
+                                    {/* Project Image */}
+                                    <div className="relative aspect-[4/3] bg-muted/10 rounded-lg overflow-hidden mb-4">
+                                        {project.image && (
+                                            <Image
+                                                src={project.image}
+                                                alt={project.title}
+                                                fill
+                                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                            />
+                                        )}
+                                    </div>
+
+                                    {/* Project Info */}
+                                    <div className="space-y-2">
+                                        <div className="flex items-center justify-between">
+                                            <p className="text-caption text-muted">
+                                                {project.category}
+                                            </p>
+                                            <p className="text-caption text-muted">
+                                                {project.year}
+                                            </p>
+                                        </div>
+                                        <motion.h3
+                                            className="text-subheading"
+                                            variants={{
+                                                hover: { x: 4 },
+                                            }}
+                                            transition={{ duration: 0.3 }}
+                                        >
+                                            {project.title}
+                                        </motion.h3>
+                                        <p className="text-body text-muted line-clamp-2">
+                                            {project.shortDescription}
+                                        </p>
+                                    </div>
+                                </motion.div>
+                            </Link>
+                        </Reveal>
+                    ))}
+                </div>
             </div>
         </section>
     );
