@@ -12,6 +12,7 @@ export const profile = {
     whatsApp: "https://wa.me/6285330559588",
     "twitter / x": "https://x.com/madudidot",
   },
+  resumeUrl: "/latest-resume.pdf",
 };
 
 export type Profile = typeof profile;

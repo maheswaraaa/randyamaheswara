@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { profile } from "@/content/profile";
 import { Reveal, TextReveal } from "../ui/Reveal";
+import { Button } from "../ui/Button";
 
 export function Hero() {
     return (
@@ -28,10 +29,14 @@ export function Hero() {
 
                     {/* Side info */}
                     <div className="lg:col-span-4 lg:text-right">
-                        <Reveal delay={0.8}>
-                            <p className="text-caption mb-2">Based in</p>
-                            <p className="text-body">{profile.location}</p>
-                        </Reveal>
+                        <div className="space-y-6">
+                            <Reveal delay={0.8}>
+                                <div>
+                                    <p className="text-caption mb-2">Based in</p>
+                                    <p className="text-body">{profile.location}</p>
+                                </div>
+                            </Reveal>
+                        </div>
                     </div>
                 </div>
             </div>
