@@ -2,6 +2,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { SelectedWork } from "@/components/sections/SelectedWork";
 import { WorkExperience } from "@/components/sections/WorkExperience";
+import { Skills } from "@/components/sections/Skills";
 import { AboutPreview } from "@/components/sections/AboutPreview";
 import { FooterCTA } from "@/components/sections/FooterCTA";
 import { Navbar } from "@/components/navigation/Navbar";
@@ -17,6 +18,7 @@ export default function HomePage() {
         <main>
           <Hero />
           <SelectedWork />
+          <Skills />
           <WorkExperience />
           <AboutPreview />
           <FooterCTA />

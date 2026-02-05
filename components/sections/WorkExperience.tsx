@@ -6,7 +6,7 @@ import { experiences } from "@/content/experience";
 
 export function WorkExperience() {
     return (
-        <section className="py-32 relative">
+        <section className="section relative">
             <div className="container">
                 {/* Header */}
                 <div className="mb-16">
@@ -62,7 +62,7 @@ export function WorkExperience() {
                                     </div>
                                 </div>
 
-                                {/* Description - FIXED */}
+                                {/* Description */}
                                 {exp.description && (
                                     <ul className="space-y-3 mt-6">
                                         {exp.description.map((item, i) => (
