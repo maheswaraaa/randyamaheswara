@@ -9,14 +9,14 @@
   --muted: #737373;
   --accent: #4169e1;
   --border: #e5e5e5;
-  
+
   /* Typography */
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-  
+
   /* Spacing */
   --section-padding: clamp(4rem, 10vw, 8rem);
   --container-padding: clamp(1.5rem, 5vw, 4rem);
-  
+
   /* Animation */
   --transition-fast: 0.3s ease;
   --transition-normal: 0.5s cubic-bezier(0.43, 0.13, 0.23, 0.96);
@@ -141,12 +141,15 @@ a {
   color: var(--foreground-light);
 }
 
-/* Hide scrollbar but keep functionality */
-.hide-scrollbar {
-  -ms-overflow-style: none;
+/* Hide scrollbar for all browsers */
+* {
   scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
 }
 
-.hide-scrollbar::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
+  /* Chrome, Safari, Opera */
 }
