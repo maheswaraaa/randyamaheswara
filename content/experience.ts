@@ -23,10 +23,9 @@ export const experiences: Experience[] = [
         location: "Yogyakarta, Indonesia",
         workMode: "Hybrid",
         description: [
-            "Develops and maintains RUNSystem ERP software quality assurance",
+            "Develops, supports and maintains RUNSystem ERP software features and workflow documentation",
             "Develop reporting and transaction menu using MySQL and C#",
             "Guide and provide technical provisions for new engineers onboard",
-            "Develop documentation and workflow for engineering department",
         ],
     },
     {
@@ -53,5 +52,10 @@ export const experiences: Experience[] = [
         period: "Jul 2019 — Aug 2019",
         location: "Yogyakarta, Indonesia",
         workMode: "On-site",
+        description: [
+            "Create and develop learning modules for students in Database Programming course",
+            "Supported lecturer in teaching and answering student questions",
+            "Assist lecturer in grading student assignments",
+        ],
     },
 ];

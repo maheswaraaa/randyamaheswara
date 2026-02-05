@@ -70,7 +70,7 @@ export function WorkExperience() {
                                                 key={i}
                                                 className="text-body text-muted flex gap-3"
                                             >
-                                                <span className="text-foreground/30 select-none">—</span>
+                                                <span className="text-foreground/30 select-none">•</span>
                                                 <span>{item}</span>
                                             </li>
                                         ))}
