@@ -10,16 +10,16 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-    {
-        id: "nadi-analytics",
-        title: "NADI",
-        description: "A public-facing National Analytics for Discovery & Insights application that helps users understand what topics are rising, why they matter, and where they are likely heading next, based on aggregated signals from trusted public data sources.",
-        shortDescription: "National analytics platform for discovering trending topics and insights from trusted data sources.",
-        category: "Data Analytics",
-        year: "2025",
-        image: "/images/projects/nadi-analytics.jpg",
-        link: "https://nadianalytics.vercel.app/"
-    },
+    // {
+    //     id: "nadi-analytics",
+    //     title: "NADI",
+    //     description: "A public-facing National Analytics for Discovery & Insights application that helps users understand what topics are rising, why they matter, and where they are likely heading next, based on aggregated signals from trusted public data sources.",
+    //     shortDescription: "National analytics platform for discovering trending topics and insights from trusted data sources.",
+    //     category: "Data Analytics",
+    //     year: "2025",
+    //     image: "/images/projects/nadi-analytics.jpg",
+    //     link: "https://nadianalytics.vercel.app/"
+    // },
     {
         id: "replay",
         title: "Replay",
