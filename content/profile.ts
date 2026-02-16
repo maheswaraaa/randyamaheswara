@@ -11,6 +11,7 @@ export const profile = {
     linkedIn: "https://www.linkedin.com/in/randyamaheswara/",
     whatsApp: "https://wa.me/6285330559588",
     "twitter / x": "https://x.com/madudidot",
+    discord: "https://discord.com/users/506481601375633423",
   },
   resumeUrl: "/latest-resume.pdf",
 };
