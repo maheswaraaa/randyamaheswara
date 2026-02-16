@@ -42,7 +42,7 @@ export function Navbar() {
                         <CircleButton
                             onClick={() => setIsOpen(true)}
                             size={48}
-                            className="bg-foreground-light text-foreground text-xs"
+                            className="bg-transparent text-foreground text-xs hover:opacity-70 transition-opacity"
                         >
                             Menu
                         </CircleButton>
