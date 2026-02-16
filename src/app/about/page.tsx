@@ -23,6 +23,7 @@ function AboutContent() {
     return (
         <section className="min-h-screen pt-32 pb-24">
             <div className="container">
+                <div className="h-5"></div> {/* 96px spacer */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
                     {/* Left column - Image */}
                     <div className="lg:col-span-5">
@@ -86,6 +87,7 @@ function AboutContent() {
                         </Reveal>
                     </div>
                 </div>
+                <div className="h-7"></div> {/* 96px spacer */}
             </div>
         </section>
     );
