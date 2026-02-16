@@ -33,6 +33,8 @@ export const skills: SkillCategory[] = [
             "Vercel",
             "Git",
             "Framer Motion",
+            "Plane",
+            "Trello"
         ],
     },
 ];
