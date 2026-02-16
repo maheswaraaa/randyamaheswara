@@ -39,5 +39,15 @@ export const projects: Project[] = [
         year: "2025",
         image: "/images/projects/quick-invoice.jpg",
         link: "https://project-quickinvoice.vercel.app/"
-    }
+    },
+    {
+        id: "nananini",
+        title: "Nananini Wedding",
+        description: "A landing page for Nananini Wedding local business from Yogyakarta, Indonesia.",
+        shortDescription: "Landing page for local business Nananini Wedding",
+        category: "Landing Page",
+        year: "2025",
+        image: "/images/projects/nananini.jpg",
+        link: "https://nananini.vercel.app/"
+    },
 ];
