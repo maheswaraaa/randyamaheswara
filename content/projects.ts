@@ -26,7 +26,7 @@ export const projects: Project[] = [
         description: "A personal movie companion that helps you discover new films, track what you've watched, and remember the stories that moved you. Keep your cinematic journey organized in one beautiful place.",
         shortDescription: "Personal movie companion for discovering, tracking, and remembering films.",
         category: "Personal Tools",
-        year: "2025",
+        year: "2026",
         image: "/images/projects/replay-latest.jpg",
         link: "https://project-replay.vercel.app"
     },
@@ -36,7 +36,7 @@ export const projects: Project[] = [
         description: "Create professional invoices in seconds. A streamlined invoice generator designed for freelancers and small businesses who need clean, polished billing without the complexity.",
         shortDescription: "Streamlined invoice generator for freelancers and small businesses.",
         category: "Productivity",
-        year: "2025",
+        year: "2026",
         image: "/images/projects/quick-invoice.jpg",
         link: "https://project-quickinvoice.vercel.app/"
     },
