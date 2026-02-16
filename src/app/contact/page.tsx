@@ -51,7 +51,9 @@ function ContactContent() {
                             </Magnetic>
                         </Reveal>
 
+
                         <Reveal delay={0.5}>
+                            <div className="h-5"></div> {/* 96px spacer */}
                             <div className="mt-12 flex justify-start gap-2">
                                 <Button
                                     href={`mailto:${profile.email}`}
